@@ -44,7 +44,10 @@ public class Player {
 	}
 	
 	public double getPercent() {
-		return ((double)(this.correct)) / (this.correct + this.incorrect);
+		if ((incorrect + correct) == 0) {
+			return 0;
+		}
+		return (((double)(this.correct)) / (this.correct + this.incorrect)) *100;
 	}
 	
 	public void isCorrect() {

@@ -17,7 +17,7 @@ public class HourOfPlay {
 	public HourOfPlay(int hourOfPlay) {
 		this.hourOfPlay = hourOfPlay;
 		this.score = 0;
-		this.goal = hourOfPlay*3;
+		this.goal = hourOfPlay*2;
 		this.isTimeUp = false;
 	}
 	
